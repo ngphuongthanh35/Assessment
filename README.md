@@ -8,3 +8,6 @@ Question #2 Generate a query to gather the sum of revenue by geo from the store_
 >select sum(revenue), store_location
 >from store_revenue
 >group by store_location;
+
+Question #3 Merge these two datasets so we can see impressions, clicks, and revenue together by date and geo. Please ensure all records from each table are accounted for.
+
