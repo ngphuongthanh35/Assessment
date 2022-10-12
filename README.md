@@ -17,4 +17,4 @@ Question #4 In your opinion, what is the most efficient store and why?
 >Based on the above script, I found out that store in United States-CA has the highest revenue but not the highest number of clicks and impression. This show that the CA store is most the most efficient because they can generate the highest revenue without having to produce a lot of clicks and impressions. Assuming the marketing is equal across all stores, the date implies that the CA store has the highest rate of return. 
 
 Question #5 (Challenge) Generate a query to rank in order the top 10 revenue producing states​
->SELECT store_location, revenue FROM store_revenue order by revenue desc Limit 10;
+>SELECT store_location, revenue,date FROM store_revenue order by revenue desc Limit 10;
