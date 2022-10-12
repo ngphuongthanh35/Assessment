@@ -12,4 +12,5 @@ Question #3 Merge these two datasets so we can see impressions, clicks, and reve
 
 Question #4 In your opinion, what is the most efficient store and why?
 >select sum(R.revenue),S.impressions ,S.clicks, R.store_location from store_revenue R join marketing_data S on S.id=R.id group by S.geo;
+>
 >Based on the above script, I found out that store in United States-CA has the highest revenue but not the highest number of clicks and impression. This show that the CA store is most the most efficient because they can generate the highest revenue without having to produce a lot of clicks and impressions. Assuming the marketing is equal across all stores, the date implies that the CA store has the highest rate of return. 
