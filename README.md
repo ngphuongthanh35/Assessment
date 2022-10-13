@@ -17,3 +17,4 @@ Question #4 In your opinion, what is the most efficient store and why?
 Question #5 (Challenge) Generate a query to rank in order the top 10 revenue producing states
 
 >SELECT store_location, revenue,date FROM store_revenue order by revenue desc Limit 10;
+>
