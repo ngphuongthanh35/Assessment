@@ -8,6 +8,8 @@ Question #1 Generate a query to get the sum of the clicks of the marketing data:
 Question #2 Generate a query to gather the sum of revenue by geo from the store_revenue table:
 
 >select sum(revenue), store_location from store_revenue group by store_location;
+>![image](https://user-images.githubusercontent.com/115512562/196302361-f36418ea-55df-4516-b9fd-5141bb60e344.png)
+
 
 Question #3 Merge these two datasets so we can see impressions, clicks, and revenue together by date and geo. Please ensure all records from each table are accounted for.
 >select sum(S.revenue), sum(M.impressions), sum(M.clicks), M.geo, M.date from store_revenue S join marketing_data M on right(S.store_location,2) = M.geo and S.date = M.date group by M.geo, M.date;
