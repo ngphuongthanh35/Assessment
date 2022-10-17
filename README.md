@@ -3,6 +3,8 @@ Question #1 Generate a query to get the sum of the clicks of the marketing data:
 
 >select sum(clicks) from marketing_data;
 
+> The sum of clicks of the marketing data is 1792
+
 Question #2 Generate a query to gather the sum of revenue by geo from the store_revenue table:
 
 >select sum(revenue), store_location from store_revenue group by store_location;
